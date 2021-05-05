@@ -8,10 +8,9 @@ let n=5;
 for(let i=0;i<n;i+=1){
     let linhas=document.createElement("tr");
     tabela.appendChild(linhas);
-    linhas.className
     for(let i=0;i<n;i+=1){
     let colunas=document.createElement("td");
-    tabela.appendChild(colunas);
+    linhas.appendChild(colunas);
     colunas.className="pixel"
 }
 }
