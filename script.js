@@ -1,8 +1,8 @@
 const tabela=document.querySelector("#pixel-board")
 const localBotao=document.querySelector("#botao")
 document.querySelectorAll(".color")[0].style.background="black"
-document.querySelectorAll(".color")[1].style.background="red"
-document.querySelectorAll(".color")[2].style.background="green"
+document.querySelectorAll(".color")[1].style.background="brown"
+document.querySelectorAll(".color")[2].style.background="pink"
 document.querySelectorAll(".color")[3].style.background="blue"
 let n=5 ;
 
@@ -57,7 +57,7 @@ let botao=document.createElement("button");
 localBotao.appendChild(botao);
 botao.className="botaoStyle"
 botao.id="clear-board"
-botao.innerText="Limpa"
+botao.innerText="Limpar"
 botao.addEventListener("click", function(){
     for(let i=0;i<n*n;i+=1)
     document.querySelectorAll(".pixel")[i].style.backgroundColor="white"
