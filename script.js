@@ -1,4 +1,5 @@
 const tabela=document.querySelector("#pixel-board")
+const localBotao=document.querySelector("#botao")
 document.querySelectorAll(".color")[0].style.background="black"
 document.querySelectorAll(".color")[1].style.background="red"
 document.querySelectorAll(".color")[2].style.background="green"
@@ -9,9 +10,9 @@ for(let i=0;i<n;i+=1){
     let linhas=document.createElement("tr");
     tabela.appendChild(linhas);
     for(let i=0;i<n;i+=1){
-    let colunas=document.createElement("td");
-    linhas.appendChild(colunas);
-    colunas.className="pixel"
+        let colunas=document.createElement("td");
+        linhas.appendChild(colunas);
+        colunas.className="pixel"
 }
 }
 
@@ -50,6 +51,18 @@ corPixel.addEventListener("click", function(evento){
     evento.target.style.backgroundColor=document.querySelector(".selected").style.backgroundColor;
     console.log(document.querySelector(".selected").style.backgroundColor)
 })
+
+
+let botao=document.createElement("button");
+localBotao.appendChild(botao);
+botao.className="botaoStyle"
+botao.id="clear-board"
+botao.innerText="Limpa"
+botao.addEventListener("click", function(){
+    for(let i=0;i<n*n;i+=1)
+    document.querySelectorAll(".pixel")[i].style.backgroundColor="white"
+})
+
 
 
 window.onload=document.querySelectorAll(".color")[0].className="color selected";
