@@ -7,4 +7,10 @@
     width: 40px;
     height: 40px;
     border: solid black 1px;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+.pixel-board {
+    height: 200px;
 }

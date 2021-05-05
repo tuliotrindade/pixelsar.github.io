@@ -14,4 +14,5 @@ for(let i=0;i<n;i+=1){
     colunas.className="pixel"
 }
 }
+window.onload(document.querySelectorAll(".color")[0].className="color selected");
 
