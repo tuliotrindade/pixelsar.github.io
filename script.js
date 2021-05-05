@@ -3,7 +3,7 @@ document.querySelectorAll(".color")[0].style.background="black"
 document.querySelectorAll(".color")[1].style.background="red"
 document.querySelectorAll(".color")[2].style.background="green"
 document.querySelectorAll(".color")[3].style.background="blue"
-let n=5;
+let n=20 ;
 
 for(let i=0;i<n;i+=1){
     let linhas=document.createElement("tr");
@@ -45,6 +45,11 @@ color4.addEventListener("click", function(){
     color4.className="color selected"
 })
 
+let corPixel=document.querySelector("#pixel-board");
+corPixel.addEventListener("click", function(evento){
+    evento.target.style.backgroundColor=document.querySelector(".selected").style.backgroundColor;
+    console.log(document.querySelector(".selected").style.backgroundColor)
+})
 
 
 window.onload=document.querySelectorAll(".color")[0].className="color selected";
