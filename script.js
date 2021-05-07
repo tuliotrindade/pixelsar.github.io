@@ -1,5 +1,9 @@
 const tabela=document.querySelector("#pixel-board")
 const localBotao=document.querySelector("#botao")
+let a=parseInt(Math.random() * 255)
+let b=parseInt(Math.random() * 255)
+let c=parseInt(Math.random() * 255)
+console.log(a,b,c)
 document.querySelectorAll(".color")[0].style.background="black"
 document.querySelectorAll(".color")[1].style.background="red"
 document.querySelectorAll(".color")[2].style.background="pink"
@@ -7,17 +11,8 @@ document.querySelectorAll(".color")[3].style.background="blue"
 let n;
 let recebeEntrada=document.querySelector("#board-size")
 let botao2=document.querySelector("#generate-board")
-let c=0
 botao2.addEventListener("click", function(){
     n=recebeEntrada.value;
-    if(n==""){
-        return window.alert("Board inválido!");
-    }
-
-    if(n<5){
-       n=5
-    }
-    if(c==0){
     for(let i=0;i<n;i+=1){
     let linhas=document.createElement("tr");
     tabela.appendChild(linhas);
@@ -26,13 +21,7 @@ botao2.addEventListener("click", function(){
         linhas.appendChild(colunas);
         colunas.className="pixel"
 }
-}
-    c+=1
-}
-        else{
-        location.reload()
-        c=0;
-    }
+}   
 })
 
 
