@@ -1,9 +1,5 @@
 const tabela=document.querySelector("#pixel-board")
 const localBotao=document.querySelector("#botao")
-let a=parseInt(Math.random() * 255)
-let b=parseInt(Math.random() * 255)
-let c=parseInt(Math.random() * 255)
-console.log(a,b,c)
 document.querySelectorAll(".color")[0].style.background="black"
 document.querySelectorAll(".color")[1].style.background="red"
 document.querySelectorAll(".color")[2].style.background="pink"
@@ -12,7 +8,9 @@ let n;
 let recebeEntrada=document.querySelector("#board-size")
 let botao2=document.querySelector("#generate-board")
 botao2.addEventListener("click", function(){
-    n=recebeEntrada.value;
+    
+})
+n=5;
     for(let i=0;i<n;i+=1){
     let linhas=document.createElement("tr");
     tabela.appendChild(linhas);
@@ -22,7 +20,6 @@ botao2.addEventListener("click", function(){
         colunas.className="pixel"
 }
 }   
-})
 
 
 let color1=document.querySelectorAll(".color")[0]
