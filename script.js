@@ -1,12 +1,24 @@
 const tabela=document.querySelector("#pixel-board")
 const localBotao=document.querySelector("#botao")
 document.querySelectorAll(".color")[0].style.background="black"
-document.querySelectorAll(".color")[1].style.background="brown"
+document.querySelectorAll(".color")[1].style.background="red"
 document.querySelectorAll(".color")[2].style.background="pink"
 document.querySelectorAll(".color")[3].style.background="blue"
-let n=5 ;
+let n;
+let recebeEntrada=document.querySelector("#board-size")
+let botao2=document.querySelector("#generate-board")
+let c=0
+botao2.addEventListener("click", function(){
+    n=recebeEntrada.value;
+    if(n==""){
+        return window.alert("Board inválido!");
+    }
 
-for(let i=0;i<n;i+=1){
+    if(n<5){
+       n=5
+    }
+    if(c==0){
+    for(let i=0;i<n;i+=1){
     let linhas=document.createElement("tr");
     tabela.appendChild(linhas);
     for(let i=0;i<n;i+=1){
@@ -15,6 +27,14 @@ for(let i=0;i<n;i+=1){
         colunas.className="pixel"
 }
 }
+    c+=1
+}
+        else{
+        location.reload()
+        c=0;
+    }
+})
+
 
 let color1=document.querySelectorAll(".color")[0]
 let color2=document.querySelectorAll(".color")[1]
@@ -59,8 +79,9 @@ botao.className="botaoStyle"
 botao.id="clear-board"
 botao.innerText="Limpar"
 botao.addEventListener("click", function(){
-    for(let i=0;i<n*n;i+=1)
+    for(let i=0;i<n*n;i+=1){
     document.querySelectorAll(".pixel")[i].style.backgroundColor="white"
+}
 })
 
 
