@@ -25,7 +25,7 @@ botao2.addEventListener('click', function () {
   let linhaN = document.querySelectorAll('.linha');
   n = recebeEntrada.value;
   if (n === '' || n < 5) {
-    alert('Valor inválido!');
+    alert('Board inválido!');
   }
   for (let i = 0; i < linhaN.length; i += 1) {
     tabela.removeChild(tabela.lastChild);
@@ -91,7 +91,11 @@ botao.className = 'botaoStyle';
 botao.id = 'clear-board';
 botao.innerText = 'Limpar';
 botao.addEventListener('click', function () {
-  for (let i = 0; i < n * n; i += 1) {
+    let t=recebeEntrada.value
+    if(t<5){
+       t=5
+    }
+  for (let i = 0; i < t*t; i += 1) {
     document.querySelectorAll('.pixel')[i].style.backgroundColor = 'white';
   }
 });
