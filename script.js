@@ -98,4 +98,4 @@ botao.addEventListener('click', function () {
 
 window.onload = document.querySelectorAll('.color')[0].className =
   'color selected';
-window.onload(criaBoard(5));
+window.onload=criaBoard(5);
