@@ -1,4 +1,4 @@
-   `Requisitos obrigatórios:`
+   # Requisitos obrigatórios:
     - 1 - Adicione à página o título "Paleta de Cores".(#1---adicione-à-página-o-título-paleta-de-cores)
     - 2 - Adicione à página uma paleta de quatro cores distintas.(#2---adicione-à-página-uma-paleta-de-quatro-cores-distintas)
     - 3 - Adicione na página a cor preta ela deve ser a primeira na paleta de cores.]#3---adicione-na-página-a-cor-preta-ela-deve-ser-a-primeira-na-paleta-de-cores)
@@ -9,7 +9,7 @@
     - 8 - Clicar em um pixel dentro do quadro após selecionar uma cor na paleta, faz com que o pixel seja preenchido com a cor selecionada.](#8---clicar-em-um-pixel-dentro-do-quadro-após-selecionar-uma-cor-na-paleta-o-pixel-deve-ser-preenchido-com-esta-cor)
     - 9 - Crie um botão que, ao ser clicado, limpa o quadro preenchendo a cor de todos seus pixels com branco.](#9---crie-um-botão-que-ao-ser-clicado-limpa-o-quadro-preenchendo-a-cor-de-todos-seus-pixels-com-branco)
 
-
+---
 
 # Habilidades
 
