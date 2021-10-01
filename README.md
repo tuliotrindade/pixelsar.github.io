@@ -1,4 +1,4 @@
-   # Requisitos obrigatórios:
+   # Requisitos obrigatórios
     - 1 - Adicione à página o título "Paleta de Cores".(#1---adicione-à-página-o-título-paleta-de-cores)
     - 2 - Adicione à página uma paleta de quatro cores distintas.(#2---adicione-à-página-uma-paleta-de-quatro-cores-distintas)
     - 3 - Adicione na página a cor preta ela deve ser a primeira na paleta de cores.]#3---adicione-na-página-a-cor-preta-ela-deve-ser-a-primeira-na-paleta-de-cores)
